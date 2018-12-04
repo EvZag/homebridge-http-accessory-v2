@@ -1,4 +1,4 @@
-# homebridge http advanced accessory
+# homebridge http accessory v2
 
 Homebridge plugin that can turn virtually any device which exposes HTTP APIs into an HomeKit compatible Service.
 Its purpose is to connect any device that can be controlled via HTTP command to Homekit. It creates a Homebridge accessory which uses HTTP calls to *change* and *check* its state via [Actions](#actions).
