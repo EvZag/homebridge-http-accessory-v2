@@ -27,6 +27,21 @@ function StaticMapper(parameters) {
 }
 
 /**
+ * Mapper class can be used to multiply result to coof
+ *
+ * @param {Object} parameters The parameters of the mapper
+ * @constructor
+ */
+function MultiplyMapper(parameters) {
+	var self = this;
+	self.coof = parameters.coof || 1;
+
+	self.map = function(value) {
+		return parseFloat(value) * self.coof;
+	};
+}
+
+/**
  * Mapper class that can extract a part of the string using a regex
  *
  * @param {Object} parameters The parameters of the mapper
@@ -151,6 +166,9 @@ function HttpAdvancedAccessory(log, config) {
 					case "static":
 						action.mappers.push(new StaticMapper(matches.parameters));
 						break;
+					case "multiply":
+						action.mappers.push(new MultiplyMapper(matches.parameters));
+						break;	
 					case "xpath":
 						action.mappers.push(new XPathMapper(matches.parameters));
 						break;
