@@ -41,6 +41,7 @@ function MultiplyMapper(parameters) {
 	};
 }
 
+
 /**
  * Mapper class that can extract a part of the string using a regex
  *
