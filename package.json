@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-http-advanced-accessory",
+  "name": "homebridge-http-accessory-v2",
   "version": "1.1.17",
   "description": "http plugin for homebridge: https://github.com/nfarina/homebridge",
   "license": "ISC",
@@ -13,7 +13,7 @@
   "author": "tasict",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/staromeste/homebridge-http-advanced-accessory"
+    "url": "git+https://github.com/EvZag/homebridge-http-accessory-v2"
   },
   "dependencies": {
     "JSONPath": "^0.11.2",
@@ -23,5 +23,5 @@
     "xmldom": "^0.1.27",
     "xpath": "0.0.24"
   },
-  "homepage": "https://github.com/staromeste/homebridge-http-advanced-accessory#readme"
+  "homepage": "https://github.com/EvZag/homebridge-http-accessory-v2#readme"
 }
