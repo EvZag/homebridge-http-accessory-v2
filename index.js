@@ -8,7 +8,7 @@ var pollingtoevent = require('polling-to-event');
 module.exports = function (homebridge) {
 	Service = homebridge.hap.Service;
 	Characteristic = homebridge.hap.Characteristic;
-	homebridge.registerAccessory("homebridge-http-advanced-accessory", "HttpAdvancedAccessory", HttpAdvancedAccessory);
+	homebridge.registerAccessory("homebridge-http-accessory-v2", "HttpAdvancedAccessory", HttpAdvancedAccessory);
 };
 
 /**
